@@ -1,0 +1,36 @@
+// <<<---Media-mixins--->>>
+@mixin media-mobile-only {
+  @media (max-width: $mobile-width) {
+    @content;
+  }
+}
+
+@mixin media-tablet {
+  @media (min-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin media-desktop {
+  @media (min-width: $desktop-width) {
+    @content;
+  }
+}
+
+@mixin media-castom($width) {
+  @media (min-width: $width) {
+    @content;
+  }
+}
+
+/*  <<<---Пример использования Media-mixins--->>>
+
+.header {
+  width:100px;
+
+  @include media-tablet {
+    width: 500px;
+  }
+}
+
+*/

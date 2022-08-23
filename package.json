@@ -1,0 +1,48 @@
+{
+  "private": true,
+  "name": "project-name",
+  "author": "author-name",
+  "description": "project-description",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build",
+    "publish": "gulp publish",
+    "test": "npm run editorconfig && npm run stylelint",
+    "editorconfig": "eclint check",
+    "stylelint": "stylelint \"src/sass/**/*.scss\" --syntax scss"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all",
+    "not < 0.25%"
+  ],
+  "engines": {
+    "node": "^16"
+  },
+  "type": "module",
+  "devDependencies": {
+    "autoprefixer": "10.4.5",
+    "browser-sync": "2.27.9",
+    "del": "6.0.0",
+    "eclint": "2.8.1",
+    "gh-pages": "3.2.3",
+    "gulp": "4.0.2",
+    "gulp-dart-sass": "1.0.2",
+    "gulp-htmlmin": "5.0.1",
+    "gulp-imagemin": "8.0.0",
+    "gulp-plumber": "1.2.1",
+    "gulp-postcss": "9.0.1",
+    "gulp-rename": "2.0.0",
+    "gulp-svgstore": "9.0.0",
+    "gulp-terser": "2.1.0",
+    "gulp-webp": "4.0.1",
+    "normalize.css": "8.0.1",
+    "postcss": "8.4.13",
+    "postcss-csso": "6.0.0",
+    "stylelint": "13.13.1",
+    "stylelint-config-htmlacademy": "0.1.11"
+  }
+}
