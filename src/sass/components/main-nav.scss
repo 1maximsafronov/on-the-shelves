@@ -1,0 +1,19 @@
+.main-nav {
+  color: $color-white;
+  background-color: $color-blue;
+}
+
+.main-nav__wrapper {
+  display: grid;
+  justify-content: space-between;
+
+  grid-template-columns: auto auto;
+}
+
+.main-nav__site {
+  margin: 0;
+}
+
+.main-nav__user {
+  margin: 0;
+}

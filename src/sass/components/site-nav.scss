@@ -1,0 +1,29 @@
+.site-nav {
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.site-nav__item {
+  margin-right: 20px;
+}
+
+.site-nav__link {
+  display: block;
+
+  padding-top: 12px;
+  padding-bottom: 11px;
+
+  color: $color-white;
+
+  &:hover,
+  &:focus {
+    background-color: $color-light-blue;
+  }
+}
