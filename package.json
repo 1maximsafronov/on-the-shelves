@@ -40,7 +40,7 @@
     "gulp-terser": "2.1.0",
     "gulp-webp": "4.0.1",
     "normalize.css": "8.0.1",
-    "postcss": "8.4.13",
+    "postcss": "8.4.16",
     "postcss-csso": "6.0.0",
     "stylelint": "13.13.1",
     "stylelint-config-htmlacademy": "0.1.11"
