@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  min-width: 1248px;
 }
 
 *,
@@ -9,6 +10,8 @@ html {
 }
 
 body {
+  min-width: 1248px;
+
   color: #37393e;
   background-color: #f6f6f6;
 }

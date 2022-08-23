@@ -1,0 +1,13 @@
+.main-page {
+  display: grid;
+
+  grid-template-rows: auto 1fr auto;
+}
+
+.main-page__header {
+  margin-bottom: 50px;
+}
+
+.main-page__section {
+  margin-bottom: 70px;
+}

@@ -12,8 +12,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Podkova:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
-<body>
-  <header class="page-header">
+<body class="main-page">
+  <header class="main-page__header page-header">
     <div class="page-header__top">
       <a href="index.html" class="page-header__logo">
         <img src="http://via.placeholder.com/230x35" alt="">
@@ -57,12 +57,13 @@
       </div>
     </nav>
   </header>
-  <main class="page-main container">
-    <section class="promo">
+  <main class="main-page__content page-content container">
+    <section class="main-page__section promo">
+      <h2 class="visually-hidden">Промо продукты</h2>
       <img src="http://via.placeholder.com/1220x450" alt="">
     </section>
 
-    <section class="new-products">
+    <section class="main-page__section new-products">
       <h2 class="section-title">Новинки</h2>
       <ul class="product-list">
         <li class="product-list__item product-card">
@@ -121,7 +122,7 @@
       </ul>
     </section>
 
-    <section class="best-products">
+    <section class="main-page__section best-products">
       <h2 class="section-title">Лучшее</h2>
       <ul class="product-list">
         <li class="product-list__item product-card">
@@ -182,7 +183,7 @@
       </ul>
     </section>
 
-    <section class="reviews">
+    <section class="main-page__section reviews">
       <h2 class="section-title">Отзывы</h2>
       <ul class="reviews__list">
         <li class="reviews__item review">
@@ -218,7 +219,7 @@
       </ul>
     </section>
 
-    <section class="about-us">
+    <section class="main-page__section about-us">
       <h2 class="section-title">О нас</h2>
       <ul class="about-us__list">
         <li class="about-us__item">
@@ -241,7 +242,7 @@
       </ul>
     </section>
   </main>
-  <footer class="page-footer">
+  <footer class="main-page__footer page-footer">
     <div class="page-footer__wrapper container">
       <div>
         <a class="page-footer__logo" href="index.html">
