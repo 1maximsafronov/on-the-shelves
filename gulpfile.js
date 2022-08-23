@@ -126,14 +126,14 @@ export const build = gulp.series(
   clean,
   copy,
   optimizeImages,
-  gulp.parallel(styles, html, scripts, svgSprite, createWebp)
+  gulp.parallel(styles, html, scripts, svgSprite/* , createWebp */)
 );
 
 export default gulp.series(
   clean,
   copy,
   copyImages,
-  gulp.parallel(styles, html, scripts, svgSprite, createWebp),
+  gulp.parallel(styles, html, scripts, svgSprite/* , createWebp */),
   gulp.series(server, watcher)
 );
 
