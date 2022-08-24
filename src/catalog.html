@@ -12,8 +12,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Podkova:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
-<body>
-  <header class="page-header">
+<body class="catalog-page">
+  <header class="catalog-page__header page-header">
     <div class="page-header__top">
       <a href="index.html" class="page-header__logo">
         <img src="http://via.placeholder.com/230x35" alt="">
@@ -57,7 +57,183 @@
       </div>
     </nav>
   </header>
-  <main class="page-main container"></main>
+  <main class="catalog-page__content page-content container">
+    <ul class="catalog-page__breadcrumbs breadcrumbs">
+      <li class="breadcrumbs__item">
+        <a href="#" class="breadcrumbs__link">Главная страница</a>
+      </li>
+      <li class="breadcrumbs__item breadcrumbs__item--current">
+        <a href="#" class="breadcrumbs__link">Каталог книг</a>
+      </li>
+    </ul>
+
+    <h1 class="catalog-page__title">Каталог книг</h1>
+    <div class="catalog-page__wrapper">
+      <div class="catalog-page__filter catalog-filter">
+        <fieldset class="catalog-filter__group">
+          <legend class="catalog-filter__title">Категория</legend>
+          <ul class="catalog-filter__list">
+            <li class="catalog-filter__item">
+              <input type="checkbox" name="category" id="">
+              <label for="">Художественная литература</label>
+            </li>
+            <li class="catalog-filter__item">
+              <input type="checkbox" name="category" id="">
+              <label for="">Книги для детей</label>
+            </li>
+            <li class="catalog-filter__item">
+              <input type="checkbox" name="category" id="">
+              <label for="">Образование</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="catalog-filter__group">
+          <legend class="catalog-filter__title">Статус</legend>
+          <ul class="catalog-filter__list">
+            <li class="catalog-filter__item">
+              <input type="radio" name="status" id="">
+              <label for="">Хиты продаж</label>
+            </li>
+            <li class="catalog-filter__item">
+              <input type="radio" name="status" id="">
+              <label for="">Новинки</label>
+            </li>
+            <li class="catalog-filter__item">
+              <input type="radio" name="status" id="">
+              <label for="">Предзаказ</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="catalog-filter__group">
+          <legend class="catalog-filter__title">Наличие</legend>
+          <ul class="catalog-filter__list">
+            <li class="catalog-filter__item">
+              <input type="radio" name="status" id="">
+              <label for="">В магазине</label>
+            </li>
+            <li class="catalog-filter__item">
+              <input type="radio" name="status" id="">
+              <label for="">В интернет-магазине</label>
+            </li>
+            <li class="catalog-filter__item">
+              <input type="radio" name="status" id="">
+              <label for="">Под заказ</label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+      <ul class="catalog-page__products product-list">
+        <li class="product-list__item product-card">
+          <p class="product-card__rating">3.5</p>
+          <p class="product-card__picture">
+            <img src="http://via.placeholder.com/275x320" alt="">
+          </p>
+          <div class="product-card__info">
+            <p class="product-card__author">Палиенко А.</p>
+            <h3 class="product-card__name">Жизнь в удовольствие</h3>
+            <p class="product-card__desc">Автор собрал в этой книге все свои знания, актуальные в современном мире</p>
+            <a href="#" class="product-card__more">Подробнее</a>
+            <p class="product-card__pages-count">208 страниц</p>
+          </div>
+        </li>
+        <li class="product-list__item product-card">
+          <p class="product-card__rating">5.0</p>
+          <p class="product-card__picture">
+            <img src="http://via.placeholder.com/275x320" alt="">
+          </p>
+          <div class="product-card__info">
+            <p class="product-card__author">Несбё Ю.</p>
+            <h3 class="product-card__name">Королевство</h3>
+            <p class="product-card__desc">В норвежском городке, затерянном в горах, течет сонная, мирная жизнь</p>
+            <a href="#" class="product-card__more">Подробнее</a>
+            <p class="product-card__pages-count">576 страниц</p>
+          </div>
+        </li>
+        <li class="product-list__item product-card">
+          <p class="product-card__rating">5.0</p>
+          <p class="product-card__picture">
+            <img src="http://via.placeholder.com/275x320" alt="">
+          </p>
+          <div class="product-card__info">
+            <p class="product-card__author">Пелевин В.</p>
+            <h3 class="product-card__name">Transhumanism inc.</h3>
+            <p class="product-card__desc">В будущем богатые люди смогут отделить свой мозг от старящегося тела</p>
+            <a href="#" class="product-card__more">Подробнее</a>
+            <p class="product-card__pages-count">608 страниц</p>
+          </div>
+        </li>
+        <li class="product-list__item product-card">
+          <p class="product-card__rating">5.0</p>
+          <p class="product-card__picture">
+            <img src="http://via.placeholder.com/275x320" alt="">
+          </p>
+          <div class="product-card__info">
+            <p class="product-card__author">Санд И.</p>
+            <h3 class="product-card__name">Чувство стыда</h3>
+            <p class="product-card__desc">Это чувство сидит глубоко в нас, о нем не принято распространяться и обсуждать
+              с близкими</p>
+            <a href="#" class="product-card__more">Подробнее</a>
+            <p class="product-card__pages-count">170 страниц</p>
+          </div>
+        </li>
+        <li class="product-list__item product-card">
+          <p class="product-card__rating">5.0</p>
+          <p class="product-card__picture">
+            <img src="http://via.placeholder.com/275x320" alt="">
+          </p>
+          <div class="product-card__info">
+            <p class="product-card__author">Несбё Ю.</p>
+            <h3 class="product-card__name">Королевство</h3>
+            <p class="product-card__desc">В норвежском городке, затерянном в горах, течет сонная, мирная жизнь</p>
+            <a href="#" class="product-card__more">Подробнее</a>
+            <p class="product-card__pages-count">576 страниц</p>
+          </div>
+        </li>
+        <li class="product-list__item product-card">
+          <p class="product-card__rating">5.0</p>
+          <p class="product-card__picture">
+            <img src="http://via.placeholder.com/275x320" alt="">
+          </p>
+          <div class="product-card__info">
+            <p class="product-card__author">Пелевин В.</p>
+            <h3 class="product-card__name">Transhumanism inc.</h3>
+            <p class="product-card__desc">В будущем богатые люди смогут отделить свой мозг от старящегося тела</p>
+            <a href="#" class="product-card__more">Подробнее</a>
+            <p class="product-card__pages-count">608 страниц</p>
+          </div>
+        </li>
+        <li class="product-list__item product-card">
+          <p class="product-card__rating">5.0</p>
+          <p class="product-card__picture">
+            <img src="http://via.placeholder.com/275x320" alt="">
+          </p>
+          <div class="product-card__info">
+            <p class="product-card__author">Санд И.</p>
+            <h3 class="product-card__name">Чувство стыда</h3>
+            <p class="product-card__desc">Это чувство сидит глубоко в нас, о нем не принято распространяться и обсуждать
+              с близкими</p>
+            <a href="#" class="product-card__more">Подробнее</a>
+            <p class="product-card__pages-count">170 страниц</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <ul class="pagination">
+      <li class="pagination__item">
+        <a href="#" class="pagination__link">1</a>
+      </li>
+      <li class="pagination__item">
+        <a href="#" class="pagination__link">2</a>
+      </li>
+      <li class="pagination__item">
+        <a href="#" class="pagination__link">3</a>
+      </li>
+      <li class="pagination__item">
+        <a href="#" class="pagination__link">4</a>
+      </li>
+    </ul>
+  </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper container">
       <div>
