@@ -10,7 +10,7 @@
     "publish": "gulp publish",
     "test": "npm run editorconfig && npm run stylelint",
     "editorconfig": "eclint check",
-    "stylelint": "stylelint \"src/sass/**/*.scss\" --syntax scss"
+    "stylelint": "stylelint src/sass/**/*.scss --custom-syntax postcss-scss"
   },
   "browserslist": [
     "last 2 versions",
@@ -42,6 +42,7 @@
     "normalize.css": "8.0.1",
     "postcss": "8.4.16",
     "postcss-csso": "6.0.1",
+    "postcss-scss": "^4.0.4",
     "stylelint": "^14.11.0",
     "stylelint-config-htmlacademy": "1.0.0"
   }
