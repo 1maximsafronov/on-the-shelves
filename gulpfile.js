@@ -1,7 +1,7 @@
 import autoprefixer from "autoprefixer";
 import browser from "browser-sync";
 import csso from "postcss-csso";
-import del from "del";
+import {deleteAsync as del} from "del";
 import gulp from "gulp";
 import ghpages from "gh-pages";
 import htmlmin from "gulp-htmlmin";
