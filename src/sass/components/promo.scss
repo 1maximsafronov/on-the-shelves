@@ -1,0 +1,172 @@
+
+.promo__list {
+  position: relative;
+}
+
+.promo__item {
+  position: relative;
+  z-index: 1;
+
+  overflow: hidden;
+
+  padding-top: 21px;
+  padding-right: 690px;
+  padding-bottom: 32px;
+  padding-left: 35px;
+
+  color: $color-white;
+  border-radius: 6px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.promo__bg-picture {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  display: flex;
+  overflow: hidden;
+
+  img {
+    object-fit: cover;
+  }
+}
+
+.promo__subtitle {
+  margin: 0;
+  margin-bottom: 24px;
+
+  font-family: $font-secondary;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 60px;
+}
+
+.promo__desc {
+  margin: 0;
+  margin-bottom: 66px;
+
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.promo__more {
+  display: inline-block;
+
+  padding: 10px 24px 11px;
+
+  color: $color-white;
+  border-radius: 2px;
+  background-color: $color-blue;
+
+  font-size: 20px;
+  line-height: 22px;
+
+  &:hover,
+  &:focus {
+    background-color: $color-light-blue;
+  }
+}
+
+.promo__slider-btn {
+  position: absolute;
+  z-index: 1;
+  top: 201px;
+
+  display: block;
+
+  width: 28px;
+  height: 28px;
+  margin: 0;
+  padding: 0;
+
+  cursor: pointer;
+
+  border: none;
+  border-radius: 50%;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center center;
+  box-shadow: 0 0 10px rgba(57, 113, 255, 0.2);
+
+  &--prev {
+    left: -14px;
+
+    background-image: url("../img/icon-arrow-left.svg");
+  }
+
+  &--next {
+    right: -14px;
+
+    transform: rotate(180deg);
+
+    background-image: url("../img/icon-arrow-left.svg");
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 15px rgba(57, 113, 255, 0.3);
+  }
+}
+
+.promo__slide-switches {
+  position: absolute;
+  z-index: 1;
+  bottom: 20px;
+  left: 50%;
+
+  display: flex;
+  align-items: center;
+
+  transform: translateX(-50%);
+}
+
+.promo__slide-switch {
+  display: block;
+
+  width: 8px;
+  height: 8px;
+  margin: 0;
+  margin-right: 4px;
+  padding: 0;
+
+  cursor: pointer;
+
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  background-color: transparent;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #ffffff;
+  }
+
+  &--active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 12px;
+    height: 12px;
+  }
+
+  &--active::before {
+    display: block;
+
+    width: 8px;
+    height: 8px;
+
+    content: "";
+
+    border-radius: 50%;
+    background-color: #ffffff;
+  }
+}
