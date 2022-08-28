@@ -1,0 +1,42 @@
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-nav__group {
+  margin-right: 64px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.footer-nav__title {
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.footer-nav__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.footer-nav__item {
+  margin-bottom: 6px;
+}
+
+.footer-nav__link {
+  color: inherit;
+
+  &:hover,
+  &:focus {
+    color: $color-blue;
+  }
+}
+
+.footer-nav__address {
+  font-style: normal;
+}

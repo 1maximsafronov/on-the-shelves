@@ -58,40 +58,48 @@
     </nav>
   </header>
   <main class="page-main container"></main>
-  <footer class="page-footer">
+  <footer class="main-page__footer page-footer">
     <div class="page-footer__wrapper container">
       <div>
         <a class="page-footer__logo" href="index.html">
-          <img src="http://via.placeholder.com/230x35" alt="">
+          <img src="img/logo-white.svg" width="230" height="35" alt="">
         </a>
         <ul class="page-footer__social social">
           <li class="social__item">
             <a href="#" target="_blank" class="social__link">
-              <img src="http://via.placeholder.com/28x28" alt="">
+              <svg class="social__icon" fill="white" width="28" height="28">
+                <use xlink:href="img/sprite.svg#icon-inst"></use>
+              </svg>
               <span class="visually-hidden">Инстаграм</span>
             </a>
           </li>
           <li class="social__item">
             <a href="#" target="_blank" class="social__link">
-              <img src="http://via.placeholder.com/28x28" alt="">
+              <svg class="social__icon" fill="white" width="28" height="28">
+                <use xlink:href="img/sprite.svg#icon-telegram"></use>
+              </svg>
               <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
           <li class="social__item">
             <a href="#" target="_blank" class="social__link">
-              <img src="http://via.placeholder.com/28x28" alt="">
+              <svg class="social__icon" fill="white" width="28" height="28">
+                <use xlink:href="img/sprite.svg#icon-vk"></use>
+              </svg>
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
           <li class="social__item">
             <a href="#" target="_blank" class="social__link">
-              <img src="http://via.placeholder.com/28x28" alt="">
+              <svg class="social__icon" fill="white" width="28" height="28">
+                <use xlink:href="img/sprite.svg#icon-yt"></use>
+              </svg>
               <span class="visually-hidden">Ютуб</span>
             </a>
           </li>
         </ul>
       </div>
-      <div class="footer-nav">
+      <div class="page-footer__nav footer-nav">
         <div class="footer-nav__group">
           <h2 class="page-footer__subtitle footer-nav__title">Меню</h2>
           <ul class="footer-nav__list">
@@ -129,31 +137,37 @@
         <div class="footer-nav__group">
           <h2 class="page-footer__subtitle footer-nav__title">Важно</h2>
           <ul class="footer-nav__list">
-            <li>
+            <li class="footer-nav__item">
               <a class="footer-nav__link" href="#">Возврат</a>
             </li>
-            <li>
+            <li class="footer-nav__item">
               <a class="footer-nav__link" href="#">Сертификаты</a>
             </li>
-            <li>
+            <li class="footer-nav__item">
               <a class="footer-nav__link" href="#">Предзаказы</a>
             </li>
-            <li>
+            <li class="footer-nav__item">
               <a class="footer-nav__link" href="#">Конкурсы</a>
             </li>
           </ul>
         </div>
-        <div class="page-footer__contacts footer-nav__group">
+        <div class="footer-nav__group">
           <h2 class="page-footer__subtitle footer-nav__title">Адрес</h2>
-          <address class="page-footer__address">
-            г. Санкт-Петербург,<br>
-            наб. Pеки Карповки, 5 корпус П
-          </address>
-          <a class="page-footer__phone" href="tel:+78005558628">+7 800 555 86 28</a>
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item">
+              <address class="footer-nav__address">
+                г. Санкт-Петербург,<br>
+                наб. Pеки Карповки, 5 корпус П
+              </address>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="tel:+78005558628">+7 800 555 86 28</a>
+            </li>
+          </ul>
         </div>
       </div>
-      <p class="page-footer__copyright">© ООО «Интерактивные обучающие технологии», 2013−2021</p>
     </div>
+    <p class="page-footer__copyright">© ООО «Интерактивные обучающие технологии», 2013−2021</p>
   </footer>
   <script src="js/script.js"></script>
 </body>

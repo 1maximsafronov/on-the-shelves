@@ -1,0 +1,30 @@
+.social {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 0;
+
+  list-style: none;
+}
+
+.social__item {
+  margin-right: 10px;
+}
+
+.social__link {
+  display: block;
+
+  &:hover,
+  &:focus {
+    .social__icon {
+      fill: $color-blue;
+    }
+  }
+}
+
+.social__icon {
+  display: block;
+
+  width: 28px;
+  height: 28px;
+}
