@@ -10,4 +10,8 @@
 
 .main-page__section {
   margin-bottom: 70px;
+
+  &:last-child {
+    margin-bottom: 89px;
+  }
 }

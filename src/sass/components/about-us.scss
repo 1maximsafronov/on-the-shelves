@@ -1,0 +1,47 @@
+.about-us {
+  font-family: $font-primery;
+}
+
+.about-us__list {
+  display: grid;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+  row-gap: 40px;
+}
+
+.about-us__item {
+  padding-top: 16px;
+  padding-right: 80px;
+  padding-bottom: 21px;
+  padding-left: 20px;
+
+  border-radius: 4px;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.about-us__subtitle {
+  margin: 0;
+  margin-bottom: 12px;
+  padding-right: 163px;
+
+  color: #3971ff;
+
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.about-us__desc {
+  margin: 0;
+
+  color: #37393e;
+
+  font-size: 16px;
+  line-height: 21px;
+}

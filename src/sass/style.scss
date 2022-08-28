@@ -1,5 +1,5 @@
-// Входная точка для сборки SCSS файлов
-// <<<---Global--->>>
+
+/* <<<---Global--->>> */
 @import "../../node_modules/normalize.css/normalize";
 @import "global/variables.scss";
 @import "global/fonts.scss";
@@ -7,7 +7,7 @@
 @import "global/global.scss";
 @import "global/visually-hidden.scss";
 
-// <<<---Other--->>>
+/* <<<---Other--->>> */
 @import "components/container.scss";
 @import "components/section-title.scss";
 @import "components/product-list.scss";
@@ -15,3 +15,4 @@
 @import "components/main-nav.scss";
 @import "components/site-nav.scss";
 @import "components/user-nav.scss";
+@import "components/about-us.scss";
