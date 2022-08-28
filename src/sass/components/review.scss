@@ -1,0 +1,57 @@
+.review {
+  padding-top: 20px;
+  padding-right: 25px;
+  padding-bottom: 24px;
+  padding-left: 20px;
+
+  border-radius: 4px;
+  background: #ffffff;
+}
+
+.review__author {
+  display: grid;
+  align-items: center;
+
+  grid-template-columns: min-content 1fr;
+  margin-bottom: 10px;
+}
+
+.review__avatar {
+  overflow: hidden;
+
+  width: 80px;
+  height: 80px;
+  margin: 0;
+  margin-right: 15px;
+
+  border-radius: 50%;
+  background-color: #bfbfbf;
+}
+
+.review__author-name {
+  margin: 0;
+
+  color: #3971ff;
+
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.review__products-count {
+  margin: 0;
+
+  color: #bfbfbf;
+
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.review__text {
+  margin: 0;
+
+  color: #37393e;
+
+  font-size: 16px;
+  line-height: 21px;
+}
