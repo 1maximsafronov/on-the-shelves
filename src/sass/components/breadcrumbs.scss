@@ -1,0 +1,44 @@
+
+.breadcrumbs {
+  display: flex;
+
+  padding: 0;
+
+  list-style: none;
+
+  color: #37393e;
+
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.breadcrumbs__item {
+  margin-right: 8px;
+
+  &::after {
+    display: inline-block;
+
+    margin-left: 8px;
+
+    content: "/";
+
+    color: $color-blue;
+  }
+
+  &:last-child::after {
+    display: none;
+  }
+
+  &--current {
+    color: $color-blue;
+  }
+}
+
+.breadcrumbs__link {
+  color: inherit;
+
+  &:hover,
+  &:focus {
+    color: $color-blue;
+  }
+}

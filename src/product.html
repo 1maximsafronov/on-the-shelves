@@ -12,11 +12,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Podkova:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
-<body>
-  <header class="page-header">
-    <div class="page-header__top">
+<body class="product-page">
+  <header class="main-page__header page-header">
+    <div class="page-header__top container">
       <a href="index.html" class="page-header__logo">
-        <img src="http://via.placeholder.com/230x35" alt="">
+        <img src="img/logo.svg" width="230" height="35" alt="">
       </a>
 
       <address class="page-header__address">
@@ -30,7 +30,7 @@
       <a href="#" class="page-header__cart"></a>
     </div>
     <nav class="page-header__nav main-nav">
-      <div class="page-header__wrapper">
+      <div class="main-nav__wrapper container">
         <ul class="main-nav__site site-nav">
           <li class="site-nav__item">
             <a href="index.html" class="site-nav__link">Главная</a>
@@ -51,14 +51,214 @@
             <a href="#" class="user-nav__link">Регистрация</a>
           </li>
           <li class="user-nav__item">
-            <a href="#" class="user-nav__link">Вход</a>
+            <a href="#" class="user-nav__link user-nav__link--white">Вход</a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
-  <main class="page-main container"></main>
-  <footer class="main-page__footer page-footer">
+
+  <main class="product-page__content page-content container">
+    <ul class="product-page__breadcrumbs breadcrumbs">
+      <li class="breadcrumbs__item">
+        <a href="#" class="breadcrumbs__link">Главная страница</a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a href="#" class="breadcrumbs__link">Каталог книг</a>
+      </li>
+      <li class="breadcrumbs__item breadcrumbs__item--current">
+        <a href="#" class="breadcrumbs__link">Железный король</a>
+      </li>
+    </ul>
+    <section class="product-page__card big-product-card">
+      <div class="big-product-card__picture"></div>
+      <div class="big-product-card__wrapper">
+        <div class="big-product-card__ratings">
+          <p class="big-product-card__rating">3.8</p>
+          <p class="big-product-card__rating-count">243 оценки</p>
+        </div>
+        <h2 class="big-product-card__title">Железный король</h2>
+        <p class="big-product-card__author">Кагава Джули</p>
+        <div class="big-product-card__details">
+          <div>
+            <h3 class="big-product-card__subtitle">Информация</h3>
+            <dl class="big-product-card__props">
+              <div class="big-product-card__props-item">
+                <dt class="big-product-card__props-name">Код товара</dt>
+                <dd class="big-product-card__props-value">123187432</dd>
+              </div>
+              <div class="big-product-card__props-item">
+                <dt class="big-product-card__props-name">Издательство</dt>
+                <dd class="big-product-card__props-value">Freedom</dd>
+              </div>
+              <div class="big-product-card__props-item">
+                <dt class="big-product-card__props-name">Серия</dt>
+                <dd class="big-product-card__props-value">Железные фейри</dd>
+              </div>
+              <div class="big-product-card__props-item">
+                <dt class="big-product-card__props-name">Год издания</dt>
+                <dd class="big-product-card__props-value">2021</dd>
+              </div>
+              <div class="big-product-card__props-item">
+                <dt class="big-product-card__props-name">Переводчик</dt>
+                <dd class="big-product-card__props-value">Руснак К.</dd>
+              </div>
+              <div class="big-product-card__props-item">
+                <dt class="big-product-card__props-name">Кол-во страниц</dt>
+                <dd class="big-product-card__props-value">416</dd>
+              </div>
+              <div class="big-product-card__props-item">
+                <dt class="big-product-card__props-name">Тип обложки</dt>
+                <dd class="big-product-card__props-value">Твердая</dd>
+              </div>
+              <div class="big-product-card__props-item">
+                <dt class="big-product-card__props-name">Вес, г</dt>
+                <dd class="big-product-card__props-value">370</dd>
+              </div>
+              <div class="big-product-card__props-item">
+                <dt class="big-product-card__props-name">Возрастные ограничения</dt>
+                <dd class="big-product-card__props-value">16+</dd>
+              </div>
+            </dl>
+          </div>
+          <div>
+            <h3 class="big-product-card__subtitle">Аннотация</h3>
+            <p>
+              Меня зовут МЕГАН ЧЕЙЗ. Менее чем через сутки мне
+              исполнится шестнадцать. Прекрасный возраст! В нем
+              есть нечто волшебное. О нем написано бесчисленное
+              количество повестей, песен и стихов: девушка находит
+              настоящую любовь, звезды освещают ей путь, а
+              прекрасный принц увозит на край света. Но это не моя
+              история. В жизни Меган все идет не так с тех самых
+              пор, как ее отец пропал. Но после исчезновения
+              младшего брата Меган узнает правду: она – дочь
+              короля фейри и пешка в смертельной игре.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="product-page__reviews reviews">
+      <h2 class="section-title">Рецензии</h2>
+      <ul class="reviews__list">
+        <li class="reviews__item review">
+          <div class="review__author">
+            <div class="review__avatar"></div>
+            <div>
+              <p class="review__author-name">Алексей Иванов</p>
+              <p class="review__products-count">Купил 23 книги</p>
+            </div>
+          </div>
+          <p class="review__text">
+            Хорошая книга. Полна приключений,
+            романтики, неплохих действующих героев.
+            Вообщем всего, что нужно, чтобы хорошо
+            провести время за чтением.
+          </p>
+        </li>
+        <li class="reviews__item review">
+          <div class="review__author">
+            <p class="review__avatar"></p>
+            <div>
+              <p class="review__author-name">Анна Кириллова</p>
+              <p class="review__products-count">Купила 50 книг</p>
+            </div>
+          </div>
+          <p class="review__text">
+            Не ожидала многого от этой книги, купилась
+            больше на красивую обложку, но была рада
+            ошибиться. Обе книги прочитала дня за 3 или 4,
+            уже не помню, так вчиталась!
+          </p>
+        </li>
+        <li class="reviews__item review">
+          <div class="review__author">
+            <p class="review__avatar"></p>
+            <div>
+              <p class="review__author-name">Мария Нагаева</p>
+              <p class="review__products-count">Купила 8 книг</p>
+            </div>
+          </div>
+          <p class="review__text">
+            Очень нетипичный подход, учитывая, что фейри
+            и железо слабо совместимы, но логика автора,
+            позволившая формирование нового Двора, меня
+            восхитила.
+          </p>
+        </li>
+      </ul>
+    </section>
+    <section class="product-page__previous previous-products">
+      <h2 class="section-title">Вы недавно смотрели</h2>
+      <ul class="product-list">
+        <li class="product-list__item product-card">
+          <p class="product-card__rating">5.0</p>
+          <p class="product-card__picture">
+            <img src="https://picsum.photos/275/320?random=5" alt="" width="275" height="320">
+          </p>
+          <div class="product-card__info">
+            <p class="product-card__author">Бакман Ф.</p>
+            <h3 class="product-card__name">Тревожные люди</h3>
+            <p class="product-card__desc">Целая галерея уязвимых персонажей, тонко подмеченная Бакманом человеческая
+              природа</p>
+            <div class="product-card__bottom-wrap">
+              <a href="#" class="product-card__more">Подробнее</a>
+              <p class="product-card__pages-count">416 страниц</p>
+            </div>
+          </div>
+        </li>
+        <li class="product-list__item product-card">
+          <p class="product-card__rating">5.0</p>
+          <p class="product-card__picture">
+            <img src="https://picsum.photos/275/320?random=6" alt="" width="275" height="320">
+          </p>
+          <div class="product-card__info">
+            <p class="product-card__author">Харари Ю.</p>
+            <h3 class="product-card__name">Sapiens</h3>
+            <p class="product-card__desc">Краткая история человечества. Какое будущее нас ожидает? Кто наши предки?</p>
+            <div class="product-card__bottom-wrap">
+              <a href="#" class="product-card__more">Подробнее</a>
+              <p class="product-card__pages-count">520 страниц</p>
+            </div>
+          </div>
+        </li>
+        <li class="product-list__item product-card">
+          <p class="product-card__rating">5.0</p>
+          <p class="product-card__picture">
+            <img src="https://picsum.photos/275/320?random=7" alt="" width="275" height="320">
+          </p>
+          <div class="product-card__info">
+            <p class="product-card__author">Кинг С.</p>
+            <h3 class="product-card__name">Институт</h3>
+            <p class="product-card__desc">Бежать невозможно. Будущее предопределено. Загадочная Дальняя половина
+              Института</p>
+            <div class="product-card__bottom-wrap">
+              <a href="#" class="product-card__more">Подробнее</a>
+              <p class="product-card__pages-count">608 страниц</p>
+            </div>
+          </div>
+        </li>
+        <li class="product-list__item product-card">
+          <p class="product-card__rating">5.0</p>
+          <p class="product-card__picture">
+            <img src="https://picsum.photos/275/320?random=8" alt="" width="275" height="320">
+          </p>
+          <div class="product-card__info">
+            <p class="product-card__author">Руни С.</p>
+            <h3 class="product-card__name">Нормальные люди</h3>
+            <p class="product-card__desc">О желании ощутить власть над другим человеком и одновременно всецело
+              принадлежать ему</p>
+            <div class="product-card__bottom-wrap">
+              <a href="#" class="product-card__more">Подробнее</a>
+              <p class="product-card__pages-count">288 страниц</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="product-page__footer page-footer">
     <div class="page-footer__wrapper container">
       <div>
         <a class="page-footer__logo" href="index.html">

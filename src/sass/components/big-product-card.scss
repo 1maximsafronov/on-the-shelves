@@ -1,0 +1,133 @@
+.big-product-card {
+  display: grid;
+  align-content: start;
+  align-items: start;
+  justify-content: space-between;
+
+  grid-template-columns: 485px 666px;
+}
+
+.big-product-card__picture {
+  height: 550px;
+
+  border-radius: 6px;
+  background-color: $color-gray;
+
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.04));
+}
+
+.big-product-card__ratings {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.big-product-card__rating {
+  position: relative;
+
+  margin: 0;
+  margin-right: 6px;
+  padding-left: 16px;
+
+  color: $color-blue;
+
+
+  &::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+
+    width: 16px;
+    height: 16px;
+
+    content: "";
+
+    background-image: url("../img/icon-star-blue.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}
+
+.big-product-card__rating-count {
+  margin: 0;
+
+  color: $color-gray;
+}
+
+.big-product-card__title {
+  margin: 0;
+  margin-bottom: 7px;
+
+  color: $color-dark;
+
+  font-family: $font-secondary;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 60px;
+}
+
+.big-product-card__author {
+  margin: 0;
+  margin-bottom: 30px;
+
+  color: $color-blue;
+
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.big-product-card__details {
+  display: grid;
+
+  padding-top: 15px;
+
+  border-top: 1px solid #bfbfbf;
+
+  grid-template-columns: auto 380px;
+  column-gap: 40px;
+}
+
+.big-product-card__subtitle {
+  margin: 0;
+  margin-bottom: 12px;
+
+  color: $color-dark;
+
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.big-product-card__props {
+
+}
+
+.big-product-card__props-item {
+  display: grid;
+
+  margin-bottom: 5px;
+
+  font-size: 16px;
+  line-height: 21px;
+
+  grid-template-columns: 130px auto;
+}
+
+.big-product-card__props-name {
+  margin: 0;
+  padding: 0;
+
+  color: $color-gray;
+
+  font-weight: 400;
+}
+
+.big-product-card__props-value {
+  margin: 0;
+  padding: 0;
+}
