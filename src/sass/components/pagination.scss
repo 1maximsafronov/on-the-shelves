@@ -51,6 +51,11 @@
 
   &--next {
     padding: 0;
+
+    &:hover,
+    &:focus {
+      box-shadow: none;
+    }
   }
 }
 

@@ -5,9 +5,14 @@
   flex-direction: column;
 
   border-radius: 4px;
-  background: #ffffff;
+  background-color: #ffffff;
 
   font-family: $font-primery;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 7px 12px rgba(0, 0, 0, 0.07);
+  }
 }
 
 .product-card--small {
