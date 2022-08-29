@@ -1,0 +1,34 @@
+.catalog-page__header {
+  margin: 0;
+  margin-bottom: 90px;
+}
+
+.catalog-page__breadcrumbs {
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.catalog-page__title {
+  margin: 0;
+  margin-bottom: 40px;
+
+  font-family: $font-secondary;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 60px;
+}
+
+.catalog-page__wrapper {
+  display: grid;
+  justify-content: space-between;
+
+  margin-bottom: 50px;
+
+  grid-template-columns: 246px 944px;
+}
+
+
+.catalog-page__pagination {
+  margin: 0;
+  margin-bottom: 90px;
+}

@@ -13,10 +13,10 @@
 </head>
 
 <body class="catalog-page">
-  <header class="catalog-page__header page-header">
-    <div class="page-header__top">
+  <header class="main-page__header page-header">
+    <div class="page-header__top container">
       <a href="index.html" class="page-header__logo">
-        <img src="http://via.placeholder.com/230x35" alt="">
+        <img src="img/logo.svg" width="230" height="35" alt="">
       </a>
 
       <address class="page-header__address">
@@ -30,7 +30,7 @@
       <a href="#" class="page-header__cart"></a>
     </div>
     <nav class="page-header__nav main-nav">
-      <div class="page-header__wrapper">
+      <div class="main-nav__wrapper container">
         <ul class="main-nav__site site-nav">
           <li class="site-nav__item">
             <a href="index.html" class="site-nav__link">Главная</a>
@@ -51,12 +51,13 @@
             <a href="#" class="user-nav__link">Регистрация</a>
           </li>
           <li class="user-nav__item">
-            <a href="#" class="user-nav__link">Вход</a>
+            <a href="#" class="user-nav__link user-nav__link--white">Вход</a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
+
   <main class="catalog-page__content page-content container">
     <ul class="catalog-page__breadcrumbs breadcrumbs">
       <li class="breadcrumbs__item">
@@ -69,7 +70,6 @@
         <a href="#" class="breadcrumbs__link">Железный король</a>
       </li>
     </ul>
-
     <h1 class="catalog-page__title">Каталог книг</h1>
     <div class="catalog-page__wrapper">
       <div class="catalog-page__filter catalog-filter">
@@ -222,8 +222,8 @@
         </li>
       </ul>
     </div>
-    <ul class="pagination">
-      <li class="pagination__item">
+    <ul class="catalog-page__pagination pagination">
+      <li class="pagination__item pagination__item--current">
         <a href="#" class="pagination__link">1</a>
       </li>
       <li class="pagination__item">
@@ -235,8 +235,17 @@
       <li class="pagination__item">
         <a href="#" class="pagination__link">4</a>
       </li>
+      <li class="pagination__item">
+        <a href="#" class="pagination__link pagination__link--next">
+          <svg class="pagination__icon" fill="#BFBFBF" width="24" height="24">
+            <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+          </svg>
+          <span class="visually-hidden">Следующая страница</span>
+        </a>
+      </li>
     </ul>
   </main>
+
   <footer class="main-page__footer page-footer">
     <div class="page-footer__wrapper container">
       <div>
