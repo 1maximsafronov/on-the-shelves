@@ -126,101 +126,134 @@
           </ul>
         </fieldset>
       </div>
-      <ul class="catalog-page__products product-list">
-        <li class="product-list__item product-card">
-          <p class="product-card__rating">3.5</p>
-          <p class="product-card__picture">
-            <img src="http://via.placeholder.com/275x320" alt="">
-          </p>
-          <div class="product-card__info">
-            <p class="product-card__author">Палиенко А.</p>
-            <h3 class="product-card__name">Жизнь в удовольствие</h3>
-            <p class="product-card__desc">Автор собрал в этой книге все свои знания, актуальные в современном мире</p>
-            <a href="#" class="product-card__more">Подробнее</a>
-            <p class="product-card__pages-count">208 страниц</p>
-          </div>
-        </li>
-        <li class="product-list__item product-card">
-          <p class="product-card__rating">5.0</p>
-          <p class="product-card__picture">
-            <img src="http://via.placeholder.com/275x320" alt="">
-          </p>
-          <div class="product-card__info">
-            <p class="product-card__author">Несбё Ю.</p>
-            <h3 class="product-card__name">Королевство</h3>
-            <p class="product-card__desc">В норвежском городке, затерянном в горах, течет сонная, мирная жизнь</p>
-            <a href="#" class="product-card__more">Подробнее</a>
-            <p class="product-card__pages-count">576 страниц</p>
-          </div>
-        </li>
-        <li class="product-list__item product-card">
-          <p class="product-card__rating">5.0</p>
-          <p class="product-card__picture">
-            <img src="http://via.placeholder.com/275x320" alt="">
-          </p>
-          <div class="product-card__info">
-            <p class="product-card__author">Пелевин В.</p>
-            <h3 class="product-card__name">Transhumanism inc.</h3>
-            <p class="product-card__desc">В будущем богатые люди смогут отделить свой мозг от старящегося тела</p>
-            <a href="#" class="product-card__more">Подробнее</a>
-            <p class="product-card__pages-count">608 страниц</p>
-          </div>
-        </li>
-        <li class="product-list__item product-card">
-          <p class="product-card__rating">5.0</p>
-          <p class="product-card__picture">
-            <img src="http://via.placeholder.com/275x320" alt="">
-          </p>
-          <div class="product-card__info">
-            <p class="product-card__author">Санд И.</p>
-            <h3 class="product-card__name">Чувство стыда</h3>
-            <p class="product-card__desc">Это чувство сидит глубоко в нас, о нем не принято распространяться и обсуждать
-              с близкими</p>
-            <a href="#" class="product-card__more">Подробнее</a>
-            <p class="product-card__pages-count">170 страниц</p>
-          </div>
-        </li>
-        <li class="product-list__item product-card">
-          <p class="product-card__rating">5.0</p>
-          <p class="product-card__picture">
-            <img src="http://via.placeholder.com/275x320" alt="">
-          </p>
-          <div class="product-card__info">
-            <p class="product-card__author">Несбё Ю.</p>
-            <h3 class="product-card__name">Королевство</h3>
-            <p class="product-card__desc">В норвежском городке, затерянном в горах, течет сонная, мирная жизнь</p>
-            <a href="#" class="product-card__more">Подробнее</a>
-            <p class="product-card__pages-count">576 страниц</p>
-          </div>
-        </li>
-        <li class="product-list__item product-card">
-          <p class="product-card__rating">5.0</p>
-          <p class="product-card__picture">
-            <img src="http://via.placeholder.com/275x320" alt="">
-          </p>
-          <div class="product-card__info">
-            <p class="product-card__author">Пелевин В.</p>
-            <h3 class="product-card__name">Transhumanism inc.</h3>
-            <p class="product-card__desc">В будущем богатые люди смогут отделить свой мозг от старящегося тела</p>
-            <a href="#" class="product-card__more">Подробнее</a>
-            <p class="product-card__pages-count">608 страниц</p>
-          </div>
-        </li>
-        <li class="product-list__item product-card">
-          <p class="product-card__rating">5.0</p>
-          <p class="product-card__picture">
-            <img src="http://via.placeholder.com/275x320" alt="">
-          </p>
-          <div class="product-card__info">
-            <p class="product-card__author">Санд И.</p>
-            <h3 class="product-card__name">Чувство стыда</h3>
-            <p class="product-card__desc">Это чувство сидит глубоко в нас, о нем не принято распространяться и обсуждать
-              с близкими</p>
-            <a href="#" class="product-card__more">Подробнее</a>
-            <p class="product-card__pages-count">170 страниц</p>
-          </div>
-        </li>
-      </ul>
+      <div class="catalog-page__products">
+        <div class="catalog-page__sort sorting"></div>
+        <ul class="catalog-page__list product-list">
+          <li class="product-list__item product-card product-card--small">
+            <p class="product-card__rating">3.5</p>
+            <p class="product-card__picture">
+              <img src="https://picsum.photos/221/221?random=1" alt="" width="221" height="221">
+            </p>
+            <div class="product-card__info">
+              <p class="product-card__author">Палиенко А.</p>
+              <h3 class="product-card__name">Жизнь в удовольствие</h3>
+              <p class="product-card__desc">Автор собрал в этой книге все свои знания, актуальные в современном мире</p>
+              <div class="product-card__bottom-wrap">
+                <a href="#" class="product-card__more">Подробнее</a>
+                <p class="product-card__pages-count">208 страниц</p>
+              </div>
+            </div>
+          </li>
+          <li class="product-list__item product-card product-card--small">
+            <p class="product-card__rating">5.0</p>
+            <p class="product-card__picture">
+              <img src="https://picsum.photos/221/221?random=2" alt="" width="221" height="221">
+            </p>
+            <div class="product-card__info">
+              <p class="product-card__author">Несбё Ю.</p>
+              <h3 class="product-card__name">Королевство</h3>
+              <p class="product-card__desc">В норвежском городке, затерянном в горах, течет сонная, мирная жизнь</p>
+              <div class="product-card__bottom-wrap">
+                <a href="#" class="product-card__more">Подробнее</a>
+                <p class="product-card__pages-count">576 страниц</p>
+              </div>
+            </div>
+          </li>
+          <li class="product-list__item product-card product-card--small">
+            <p class="product-card__rating">5.0</p>
+            <p class="product-card__picture">
+              <img src="https://picsum.photos/221/221?random=3" alt="" width="221" height="221">
+            </p>
+            <div class="product-card__info">
+              <p class="product-card__author">Пелевин В.</p>
+              <h3 class="product-card__name">Transhumanism inc.</h3>
+              <p class="product-card__desc">В будущем богатые люди смогут отделить свой мозг от старящегося тела</p>
+              <div class="product-card__bottom-wrap">
+                <a href="#" class="product-card__more">Подробнее</a>
+                <p class="product-card__pages-count">608 страниц</p>
+              </div>
+            </div>
+          </li>
+          <li class="product-list__item product-card product-card--small">
+            <p class="product-card__rating">5.0</p>
+            <p class="product-card__picture">
+              <img src="https://picsum.photos/221/221?random=4" alt="" width="221" height="221">
+            </p>
+            <div class="product-card__info">
+              <p class="product-card__author">Санд И.</p>
+              <h3 class="product-card__name">Чувство стыда</h3>
+              <p class="product-card__desc">Это чувство сидит глубоко в нас, о нем не принято распространяться и обсуждать
+                с близкими</p>
+              <div class="product-card__bottom-wrap">
+                <a href="#" class="product-card__more">Подробнее</a>
+                <p class="product-card__pages-count">170 страниц</p>
+              </div>
+            </div>
+          </li>
+          <li class="product-list__item product-card product-card--small">
+            <p class="product-card__rating">3.5</p>
+            <p class="product-card__picture">
+              <img src="https://picsum.photos/221/221?random=1" alt="" width="221" height="221">
+            </p>
+            <div class="product-card__info">
+              <p class="product-card__author">Палиенко А.</p>
+              <h3 class="product-card__name">Жизнь в удовольствие</h3>
+              <p class="product-card__desc">Автор собрал в этой книге все свои знания, актуальные в современном мире</p>
+              <div class="product-card__bottom-wrap">
+                <a href="#" class="product-card__more">Подробнее</a>
+                <p class="product-card__pages-count">208 страниц</p>
+              </div>
+            </div>
+          </li>
+          <li class="product-list__item product-card product-card--small">
+            <p class="product-card__rating">5.0</p>
+            <p class="product-card__picture">
+              <img src="https://picsum.photos/221/221?random=2" alt="" width="221" height="221">
+            </p>
+            <div class="product-card__info">
+              <p class="product-card__author">Несбё Ю.</p>
+              <h3 class="product-card__name">Королевство</h3>
+              <p class="product-card__desc">В норвежском городке, затерянном в горах, течет сонная, мирная жизнь</p>
+              <div class="product-card__bottom-wrap">
+                <a href="#" class="product-card__more">Подробнее</a>
+                <p class="product-card__pages-count">576 страниц</p>
+              </div>
+            </div>
+          </li>
+          <li class="product-list__item product-card product-card--small">
+            <p class="product-card__rating">5.0</p>
+            <p class="product-card__picture">
+              <img src="https://picsum.photos/221/221?random=3" alt="" width="221" height="221">
+            </p>
+            <div class="product-card__info">
+              <p class="product-card__author">Пелевин В.</p>
+              <h3 class="product-card__name">Transhumanism inc.</h3>
+              <p class="product-card__desc">В будущем богатые люди смогут отделить свой мозг от старящегося тела</p>
+              <div class="product-card__bottom-wrap">
+                <a href="#" class="product-card__more">Подробнее</a>
+                <p class="product-card__pages-count">608 страниц</p>
+              </div>
+            </div>
+          </li>
+          <li class="product-list__item product-card product-card--small">
+            <p class="product-card__rating">5.0</p>
+            <p class="product-card__picture">
+              <img src="https://picsum.photos/221/221?random=4" alt="" width="221" height="221">
+            </p>
+            <div class="product-card__info">
+              <p class="product-card__author">Санд И.</p>
+              <h3 class="product-card__name">Чувство стыда</h3>
+              <p class="product-card__desc">Это чувство сидит глубоко в нас, о нем не принято распространяться и обсуждать
+                с близкими</p>
+              <div class="product-card__bottom-wrap">
+                <a href="#" class="product-card__more">Подробнее</a>
+                <p class="product-card__pages-count">170 страниц</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
     </div>
     <ul class="catalog-page__pagination pagination">
       <li class="pagination__item pagination__item--current">

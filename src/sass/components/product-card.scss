@@ -10,6 +10,35 @@
   font-family: $font-primery;
 }
 
+.product-card--small {
+  .product-card__picture {
+    height: 221px;
+  }
+
+  .product-card__rating {
+    top: 4px;
+    left: 4px;
+  }
+
+  .product-card__info {
+    padding-top: 15px;
+  }
+
+  .product-card__author {
+    margin-bottom: 4px;
+  }
+
+  .product-card__name {
+    margin-bottom: 7px;
+
+    line-height: 23px;
+  }
+
+  .product-card__desc {
+    margin-bottom: 16px;
+  }
+}
+
 .product-card__rating {
   position: absolute;
   top: 6px;
@@ -43,6 +72,7 @@
 }
 
 .product-card__picture {
+  display: flex;
   overflow: hidden;
 
   width: 100%;
@@ -51,6 +81,15 @@
 
   border-radius: 4px 4px 0 0;
   background-color: #bfbfbf;
+
+  img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    object-fit: cover;
+  }
 }
 
 .product-card__info {
