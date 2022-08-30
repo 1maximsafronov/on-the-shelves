@@ -1,0 +1,30 @@
+.search {
+  padding: 0;
+}
+
+.search__input {
+  display: block;
+
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-top: 7px;
+  padding-right: 30px;
+  padding-bottom: 7px;
+  padding-left: 12px;
+
+  border: 0.5px solid $color-dark;
+  border-radius: 2px;
+  background-image: url("../img/icon-search.svg");
+  background-repeat: no-repeat;
+  background-position: right 5px top 50%;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+
+  &::placeholder {
+    color: $color-gray;
+  }
+}
