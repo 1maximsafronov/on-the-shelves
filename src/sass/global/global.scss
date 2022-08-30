@@ -12,10 +12,12 @@ html {
 body {
   min-width: 1248px;
 
-  color: #37393e;
-  background-color: #f6f6f6;
+  color: $color-dark;
+  background-color: $color-light-gray;
 
   font-family: $font-primery;
+  font-size: 16px;
+  line-height: 21px;
 }
 
 img {

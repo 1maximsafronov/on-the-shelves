@@ -1,7 +1,3 @@
-.about-us {
-  font-family: $font-primery;
-}
-
 .about-us__list {
   display: grid;
 
@@ -22,7 +18,7 @@
   padding-left: 20px;
 
   border-radius: 4px;
-  background: #ffffff;
+  background: $color-white;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
 }
 
@@ -31,7 +27,7 @@
   margin-bottom: 12px;
   padding-right: 163px;
 
-  color: #3971ff;
+  color: $color-blue;
 
   font-size: 24px;
   line-height: 28px;
@@ -40,8 +36,5 @@
 .about-us__desc {
   margin: 0;
 
-  color: #37393e;
-
-  font-size: 16px;
-  line-height: 21px;
+  color: $color-dark;
 }

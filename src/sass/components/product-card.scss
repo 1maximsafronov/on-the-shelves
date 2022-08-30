@@ -5,7 +5,7 @@
   flex-direction: column;
 
   border-radius: 4px;
-  background-color: #ffffff;
+  background-color: $color-white;
 
   font-family: $font-primery;
 
@@ -55,9 +55,9 @@
   margin: 0;
   padding: 1px 3px 1px 2px;
 
-  color: #ffffff;
+  color: $color-white;
   border-radius: 2px;
-  background: #3971ff;
+  background: $color-blue;
 
   font-size: 14px;
   line-height: 16px;
@@ -86,7 +86,7 @@
   margin: 0;
 
   border-radius: 4px 4px 0 0;
-  background-color: #bfbfbf;
+  background-color: $color-gray;
 
   img {
     display: block;
@@ -114,7 +114,7 @@
 .product-card__author {
   margin: 0;
 
-  color: #bfbfbf;
+  color: $color-gray;
 
   font-size: 14px;
   line-height: 16px;
@@ -124,7 +124,7 @@
   margin: 0;
   margin-bottom: 5px;
 
-  color: #3971ff;
+  color: $color-blue;
 
   font-size: 24px;
   line-height: 28px;
@@ -134,10 +134,7 @@
   margin: 0;
   margin-bottom: 15px;
 
-  color: #37393e;
-
-  font-size: 16px;
-  line-height: 21px;
+  color: $color-dark;
 }
 
 .product-card__bottom-wrap {
@@ -155,22 +152,18 @@
   padding: 1px 10px 3px;
 
   text-align: center;
-  /* identical to box height, or 131% */
-  /* #FFFFFF */
 
-  color: #ffffff;
+  color: $color-white;
   border-radius: 2px;
-  background: #3971ff;
+  background: $color-blue;
 
-  font-size: 16px;
   font-weight: 400;
-  line-height: 21px;
 }
 
 .product-card__pages-count {
   margin: 0;
 
-  color: #bfbfbf;
+  color: $color-gray;
 
   font-size: 14px;
   line-height: 16px;

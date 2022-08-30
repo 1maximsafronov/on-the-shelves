@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.min.css">
-  <title>По полочкам</title>
+  <title>По полочкам | Каталог</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Podkova:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
   <header class="catalog-page__header page-header">
     <div class="page-header__top container">
       <a href="index.html" class="page-header__logo">
-        <img src="img/logo.svg" width="230" height="35" alt="">
+        <img src="img/logo.svg" width="230" height="35" alt="Логотип сайта по полочкам">
       </a>
 
       <address class="page-header__address">
@@ -82,20 +82,75 @@
           <ul class="catalog-filter__list">
             <li class="catalog-filter__item">
               <div class="custom-checkbox">
-                <input class="visually-hidden" type="checkbox" name="category" id="literature">
-                <label for="literature">Художественная литература</label>
+                <input class="visually-hidden" type="checkbox" name="category" id="artistic-literature" value="artistic-literature">
+                <label for="artistic-literature">Художественная литература</label>
               </div>
             </li>
             <li class="catalog-filter__item">
               <div class="custom-checkbox">
-                <input class="visually-hidden" type="checkbox" name="category" id="">
-                <label for="">Книги для детей</label>
+                <input class="visually-hidden" type="checkbox" name="category" id="books-for-children" value="books-for-children">
+                <label for="books-for-children">Книги для детей</label>
               </div>
             </li>
             <li class="catalog-filter__item">
               <div class="custom-checkbox">
-                <input class="visually-hidden" type="checkbox" name="category" id="">
-                <label for="">Образование</label>
+                <input class="visually-hidden" type="checkbox" name="category" id="education" value="education">
+                <label for="education">Образование</label>
+              </div>
+            </li>
+
+            <li class="catalog-filter__item">
+              <div class="custom-checkbox">
+                <input class="visually-hidden" type="checkbox" name="category" id="science-and-technology" value="science-and-technology">
+                <label for="science-and-technology">Наука и техника</label>
+              </div>
+            </li>
+            <li class="catalog-filter__item">
+              <div class="custom-checkbox">
+                <input class="visually-hidden" type="checkbox" name="category" id="society" value="society">
+                <label for="society">Общество</label>
+              </div>
+            </li>
+            <li class="catalog-filter__item">
+              <div class="custom-checkbox">
+                <input class="visually-hidden" type="checkbox" name="category" id="business-literature" value="business-literature">
+                <label for="business-literature">Деловая литература</label>
+              </div>
+            </li>
+            <li class="catalog-filter__item">
+              <div class="custom-checkbox">
+                <input class="visually-hidden" type="checkbox" name="category" id="health" value="health">
+                <label for="health">Здоровье</label>
+              </div>
+            </li>
+            <li class="catalog-filter__item">
+              <div class="custom-checkbox">
+                <input class="visually-hidden" type="checkbox" name="category" id="hobby" value="hobby">
+                <label for="hobby">Увлечения</label>
+              </div>
+            </li>
+            <li class="catalog-filter__item">
+              <div class="custom-checkbox">
+                <input class="visually-hidden" type="checkbox" name="category" id="psychology" value="psychology">
+                <label for="psychology">Психология</label>
+              </div>
+            </li>
+            <li class="catalog-filter__item">
+              <div class="custom-checkbox">
+                <input class="visually-hidden" type="checkbox" name="category" id="esotericism" value="esotericism">
+                <label for="esotericism">Эзотерика</label>
+              </div>
+            </li>
+            <li class="catalog-filter__item">
+              <div class="custom-checkbox">
+                <input class="visually-hidden" type="checkbox" name="category" id="philosophy-and-religion" value="philosophy-and-religion">
+                <label for="philosophy-and-religion">Философия и религия</label>
+              </div>
+            </li>
+            <li class="catalog-filter__item">
+              <div class="custom-checkbox">
+                <input class="visually-hidden" type="checkbox" name="category" id="art" value="art">
+                <label for="art">Искусство</label>
               </div>
             </li>
           </ul>
@@ -106,20 +161,20 @@
           <ul class="catalog-filter__list">
             <li class="catalog-filter__item">
               <div class="custom-radio">
-                <input class="visually-hidden" type="radio" name="status" id="hit" checked>
-                <label for="hit">Хиты продаж</label>
+                <input class="visually-hidden" type="radio" name="status" id="sales-hits" value="sales-hits" checked>
+                <label for="sales-hits">Хиты продаж</label>
               </div>
             </li>
             <li class="catalog-filter__item">
               <div class="custom-radio">
-                <input class="visually-hidden" type="radio" name="status" id="">
-                <label for="">Новинки</label>
+                <input class="visually-hidden" type="radio" name="status" id="new-product" value="new-product">
+                <label for="new-product">Новинки</label>
               </div>
             </li>
             <li class="catalog-filter__item">
               <div class="custom-radio">
-                <input class="visually-hidden" type="radio" name="status" id="">
-                <label for="">Предзаказ</label>
+                <input class="visually-hidden" type="radio" name="status" id="pre-order" value="pre-order">
+                <label for="pre-order">Предзаказ</label>
               </div>
             </li>
           </ul>
@@ -129,20 +184,20 @@
           <ul class="catalog-filter__list">
             <li class="catalog-filter__item">
               <div class="custom-radio">
-                <input class="visually-hidden" type="radio" name="in-shop" id="">
-                <label for="">В магазине</label>
+                <input class="visually-hidden" type="radio" name="availability" id="in-the-store" value="in-the-store">
+                <label for="in-the-store">В магазине</label>
               </div>
             </li>
             <li class="catalog-filter__item">
               <div class="custom-radio">
-                <input class="visually-hidden" type="radio" name="in-shop" id="" checked>
-                <label for="">В интернет-магазине</label>
+                <input class="visually-hidden" type="radio" name="availability" id="in-the-online-store" value="in-the-online-store" checked>
+                <label for="in-the-online-store">В интернет-магазине</label>
               </div>
             </li>
             <li class="catalog-filter__item">
               <div class="custom-radio">
-                <input class="visually-hidden" type="radio" name="in-shop" id="">
-                <label for="">Под заказ</label>
+                <input class="visually-hidden" type="radio" name="availability" id="under-the-order" value="under-the-order">
+                <label for="under-the-order">Под заказ</label>
               </div>
             </li>
           </ul>
@@ -151,10 +206,10 @@
       <div class="catalog-page__products">
         <div class="catalog-page__sort sorting"></div>
         <ul class="catalog-page__list product-list">
-          <li class="product-list__item product-card product-card--small">
+          <li class="product-card product-card--small">
             <p class="product-card__rating">3.8</p>
             <p class="product-card__picture">
-              <img src="img/books/book-16.jpg" alt="" width="221" height="221">
+              <img src="img/books/book-16.jpg" alt="Обложка книги Железный король" width="221" height="221">
             </p>
             <div class="product-card__info">
               <p class="product-card__author">Кагава Д.</p>
@@ -166,10 +221,10 @@
               </div>
             </div>
           </li>
-          <li class="product-list__item product-card product-card--small">
+          <li class="product-card product-card--small">
             <p class="product-card__rating">4.2</p>
             <p class="product-card__picture">
-              <img src="img/books/book-14.jpg" alt="" width="221" height="221">
+              <img src="img/books/book-14.jpg" alt="Обложка книги Лисья нора" width="221" height="221">
             </p>
             <div class="product-card__info">
               <p class="product-card__author">Сакавич Н.</p>
@@ -181,10 +236,10 @@
               </div>
             </div>
           </li>
-          <li class="product-list__item product-card product-card--small">
+          <li class="product-card product-card--small">
             <p class="product-card__rating">4.5</p>
             <p class="product-card__picture">
-              <img src="img/books/book-12.jpg" alt="" width="221" height="221">
+              <img src="img/books/book-12.jpg" alt="Обложка книги Просто маса" width="221" height="221">
             </p>
             <div class="product-card__info">
               <p class="product-card__author">Акунин Б.</p>
@@ -196,10 +251,10 @@
               </div>
             </div>
           </li>
-          <li class="product-list__item product-card product-card--small">
+          <li class="product-card product-card--small">
             <p class="product-card__rating">3.9</p>
             <p class="product-card__picture">
-              <img src="img/books/book-13.jpg" alt="" width="221" height="221">
+              <img src="img/books/book-13.jpg" alt="Обложка книги Зеленый свет" width="221" height="221">
             </p>
             <div class="product-card__info">
               <p class="product-card__author">Макконахи М.</p>
@@ -211,10 +266,10 @@
               </div>
             </div>
           </li>
-          <li class="product-list__item product-card product-card--small">
+          <li class="product-card product-card--small">
             <p class="product-card__rating">3.5</p>
             <p class="product-card__picture">
-              <img src="img/books/book-11.jpg" alt="" width="221" height="221">
+              <img src="img/books/book-11.jpg" alt="Обложка книги Солнце полуночи" width="221" height="221">
             </p>
             <div class="product-card__info">
               <p class="product-card__author">Майер С.</p>
@@ -226,10 +281,10 @@
               </div>
             </div>
           </li>
-          <li class="product-list__item product-card product-card--small">
+          <li class="product-card product-card--small">
             <p class="product-card__rating">4.4</p>
             <p class="product-card__picture">
-              <img src="img/books/book-8.jpg" alt="" width="221" height="221">
+              <img src="img/books/book-8.jpg" alt="Обложка книги Вторая жизнь Уве" width="221" height="221">
             </p>
             <div class="product-card__info">
               <p class="product-card__author">Бакман Ф.</p>
@@ -241,10 +296,10 @@
               </div>
             </div>
           </li>
-          <li class="product-list__item product-card product-card--small">
+          <li class="product-card product-card--small">
             <p class="product-card__rating">3.9</p>
             <p class="product-card__picture">
-              <img src="img/books/book-2.jpg" alt="" width="221" height="221">
+              <img src="img/books/book-2.jpg" alt="Обложка книги Истребитель" width="221" height="221">
             </p>
             <div class="product-card__info">
               <p class="product-card__author">Быков Д.</p>
@@ -256,10 +311,10 @@
               </div>
             </div>
           </li>
-          <li class="product-list__item product-card product-card--small">
+          <li class="product-card product-card--small">
             <p class="product-card__rating">4.1</p>
             <p class="product-card__picture">
-              <img src="img/books/book-15.jpg" alt="" width="221" height="221">
+              <img src="img/books/book-15.jpg" alt="Обложка книги Лавр" width="221" height="221">
             </p>
             <div class="product-card__info">
               <p class="product-card__author">Водолазкин Е.</p>
@@ -303,7 +358,7 @@
     <div class="page-footer__wrapper container">
       <div>
         <a class="page-footer__logo" href="index.html">
-          <img src="img/logo-white.svg" width="230" height="35" alt="">
+          <img src="img/logo-white.svg" width="230" height="35" alt="Логотип сайта По полочкам">
         </a>
         <ul class="page-footer__social social">
           <li class="social__item">

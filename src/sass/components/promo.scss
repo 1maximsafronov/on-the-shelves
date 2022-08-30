@@ -32,6 +32,11 @@
   overflow: hidden;
 
   img {
+    width: 100%;
+    min-width: 100%;
+    height: auto;
+    min-height: 100%;
+
     object-fit: cover;
   }
 }
@@ -49,9 +54,6 @@
 .promo__desc {
   margin: 0;
   margin-bottom: 66px;
-
-  font-size: 16px;
-  line-height: 21px;
 }
 
 .promo__more {
@@ -88,7 +90,7 @@
 
   border: none;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: $color-white;
   background-repeat: no-repeat;
   background-position: center center;
   box-shadow: 0 0 10px rgba(57, 113, 255, 0.2);
@@ -136,7 +138,7 @@
 
   cursor: pointer;
 
-  border: 1px solid #ffffff;
+  border: 1px solid $color-white;
   border-radius: 50%;
   background-color: transparent;
 
@@ -146,7 +148,7 @@
 
   &:hover,
   &:focus {
-    background-color: #ffffff;
+    background-color: $color-white;
   }
 
   &--active {
@@ -167,6 +169,6 @@
     content: "";
 
     border-radius: 50%;
-    background-color: #ffffff;
+    background-color: $color-white;
   }
 }
