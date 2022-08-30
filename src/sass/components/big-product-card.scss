@@ -8,12 +8,25 @@
 }
 
 .big-product-card__picture {
+  display: flex;
+  overflow: hidden;
+  align-items: start;
+
   height: 550px;
 
   border-radius: 6px;
   background-color: $color-gray;
 
   filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.04));
+
+  img {
+    width: 100%;
+    min-width: 100%;
+    height: auto;
+    min-height: 100%;
+
+    object-fit: cover;
+  }
 }
 
 .big-product-card__ratings {
