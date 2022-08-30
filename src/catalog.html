@@ -70,30 +70,33 @@
       <li class="breadcrumbs__item">
         <a href="#" class="breadcrumbs__link">Главная страница</a>
       </li>
-      <li class="breadcrumbs__item">
-        <a href="#" class="breadcrumbs__link">Каталог книг</a>
-      </li>
       <li class="breadcrumbs__item breadcrumbs__item--current">
-        <a href="#" class="breadcrumbs__link">Железный король</a>
+        <a href="#" class="breadcrumbs__link">Каталог книг</a>
       </li>
     </ul>
     <h1 class="catalog-page__title">Каталог книг</h1>
     <div class="catalog-page__wrapper">
-      <div class="catalog-page__filter catalog-filter">
+      <form class="catalog-page__filter catalog-filter">
         <fieldset class="catalog-filter__group">
           <legend class="catalog-filter__title">Категория</legend>
           <ul class="catalog-filter__list">
             <li class="catalog-filter__item">
-              <input type="checkbox" name="category" id="">
-              <label for="">Художественная литература</label>
+              <div class="custom-checkbox">
+                <input class="visually-hidden" type="checkbox" name="category" id="literature">
+                <label for="literature">Художественная литература</label>
+              </div>
             </li>
             <li class="catalog-filter__item">
-              <input type="checkbox" name="category" id="">
-              <label for="">Книги для детей</label>
+              <div class="custom-checkbox">
+                <input class="visually-hidden" type="checkbox" name="category" id="">
+                <label for="">Книги для детей</label>
+              </div>
             </li>
             <li class="catalog-filter__item">
-              <input type="checkbox" name="category" id="">
-              <label for="">Образование</label>
+              <div class="custom-checkbox">
+                <input class="visually-hidden" type="checkbox" name="category" id="">
+                <label for="">Образование</label>
+              </div>
             </li>
           </ul>
         </fieldset>
@@ -102,16 +105,22 @@
           <legend class="catalog-filter__title">Статус</legend>
           <ul class="catalog-filter__list">
             <li class="catalog-filter__item">
-              <input type="radio" name="status" id="">
-              <label for="">Хиты продаж</label>
+              <div class="custom-radio">
+                <input class="visually-hidden" type="radio" name="status" id="hit" checked>
+                <label for="hit">Хиты продаж</label>
+              </div>
             </li>
             <li class="catalog-filter__item">
-              <input type="radio" name="status" id="">
-              <label for="">Новинки</label>
+              <div class="custom-radio">
+                <input class="visually-hidden" type="radio" name="status" id="">
+                <label for="">Новинки</label>
+              </div>
             </li>
             <li class="catalog-filter__item">
-              <input type="radio" name="status" id="">
-              <label for="">Предзаказ</label>
+              <div class="custom-radio">
+                <input class="visually-hidden" type="radio" name="status" id="">
+                <label for="">Предзаказ</label>
+              </div>
             </li>
           </ul>
         </fieldset>
@@ -119,20 +128,26 @@
           <legend class="catalog-filter__title">Наличие</legend>
           <ul class="catalog-filter__list">
             <li class="catalog-filter__item">
-              <input type="radio" name="status" id="">
-              <label for="">В магазине</label>
+              <div class="custom-radio">
+                <input class="visually-hidden" type="radio" name="in-shop" id="">
+                <label for="">В магазине</label>
+              </div>
             </li>
             <li class="catalog-filter__item">
-              <input type="radio" name="status" id="">
-              <label for="">В интернет-магазине</label>
+              <div class="custom-radio">
+                <input class="visually-hidden" type="radio" name="in-shop" id="" checked>
+                <label for="">В интернет-магазине</label>
+              </div>
             </li>
             <li class="catalog-filter__item">
-              <input type="radio" name="status" id="">
-              <label for="">Под заказ</label>
+              <div class="custom-radio">
+                <input class="visually-hidden" type="radio" name="in-shop" id="">
+                <label for="">Под заказ</label>
+              </div>
             </li>
           </ul>
         </fieldset>
-      </div>
+      </form>
       <div class="catalog-page__products">
         <div class="catalog-page__sort sorting"></div>
         <ul class="catalog-page__list product-list">

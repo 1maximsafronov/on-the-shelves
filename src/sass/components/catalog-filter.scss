@@ -1,0 +1,46 @@
+
+.catalog-filter {
+  padding: 0;
+  padding-top: 25px;
+  padding-right: 35px;
+  padding-bottom: 25px;
+  padding-left: 24px;
+
+  border-radius: 4px;
+  background-color: $color-white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.catalog-filter__group {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+
+  border: none;
+}
+
+.catalog-filter__title {
+  margin: 0;
+  margin-bottom: 13px;
+  padding: 0;
+
+  color: $color-dark;
+
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.catalog-filter__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.catalog-filter__item {
+  margin-bottom: 8px;
+
+  font-size: 16px;
+  line-height: 21px;
+}

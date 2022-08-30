@@ -1,0 +1,44 @@
+.custom-checkbox {
+  label {
+    position: relative;
+
+    display: block;
+
+    padding-left: 22px;
+
+    cursor: pointer;
+
+    color: inherit;
+
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+  label::before {
+    position: absolute;
+    top: 2.5px;
+    left: 0;
+
+    display: block;
+
+    width: 16px;
+    height: 16px;
+
+    content: "";
+
+    border: 2px solid $color-gray;
+    border-radius: 2px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  label:hover::before,
+  input:focus + label::before {
+    border-color: $color-blue;
+  }
+
+  input:checked + label::before {
+    border-color: $color-blue;
+    background-image: url("../img/icon-check.svg");
+  }
+}
