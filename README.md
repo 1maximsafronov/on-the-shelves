@@ -1,7 +1,9 @@
 
 # Сайт книжного магазина "По полочкам"
 
-![Design preview for the Space tourism website coding challenge](./preview.png)
+![Превью сайта](./preview.png)
+
+**[Демо](https://1maximsafronov.github.io/on-the-shelves/)**
 
 Простой проект с небольшим макетом. Создан в целях практики вёрстки
 
